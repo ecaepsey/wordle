@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         let keyboardBottom: [String] = ["x", "я", "ч", "с", "м", "и", "т", "ь", "б", "ю", "ввод"]
     }
     
-    
+    let secret: [String] = []
     
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -69,8 +69,6 @@ class ViewController: UIViewController {
         return field
     }
     
-    var field: [[String]] = []
-    
     var digitsLabel: [[UILabel]] = []
     
     func createFields(x: Int, y: Int) {
@@ -97,9 +95,9 @@ class ViewController: UIViewController {
         return button
     }
    
-    var row = [[String]]()
     var currentRow = [String]()
-  
+    var rowCount = 0
+    
     fileprivate func appendTextToLabel(rowCount: Int) {
         for i in 0 ..< digitsLabel[rowCount].count {
             let currentLabel = createField(field: digitsLabel[rowCount][i])
@@ -110,20 +108,27 @@ class ViewController: UIViewController {
         }
     }
     
-    var rowCount = 0
-    
     @objc func textDidChange(_ sender: UIButton) {
-        if rowCount > 5 {
-            return
-        }
         let letter = sender.titleLabel?.text
-        currentRow.append(letter!)
-        appendTextToLabel(rowCount: rowCount)
-        
-        if currentRow.count == 5 {
+        if letter == "ввод" && currentRow.count == 5 {
             rowCount += 1
             currentRow = []
         }
+        
+        if rowCount > 5 {
+            return
+        }
+      
+        if currentRow.count == 5 {
+            return
+        }
+        
+        if letter != "ввод" && letter != "x" {
+            currentRow.append(letter!)
+        }
+        
+        appendTextToLabel(rowCount: rowCount)
+
     }
     
     func createKeyboard(x: Int, y: Int) {
