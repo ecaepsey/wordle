@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         let keyboardBottom: [String] = ["x", "я", "ч", "с", "м", "и", "т", "ь", "б", "ю", "ввод"]
     }
     
-    let secret: [String] = []
+    var secret = "ложка"
     
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -28,8 +28,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         configureViews()
-        print(digitsLabel)
-       
     }
     
     lazy var verticalStackView: UIStackView = {
@@ -76,12 +74,8 @@ class ViewController: UIViewController {
             let createXView = createHorizontalStackView()
             var row: [UILabel] = []
             for _ in 0..<y {
-               
-               
-               
                 let field = createField(field:  UILabel())
                 row.append(field)
-             
                 createXView.addArrangedSubview(field)
             }
             digitsLabel.append(row)
@@ -98,18 +92,26 @@ class ViewController: UIViewController {
     var currentRow = [String]()
     var rowCount = 0
     
+  
+    
     fileprivate func appendTextToLabel(rowCount: Int) {
         for i in 0 ..< digitsLabel[rowCount].count {
             let currentLabel = createField(field: digitsLabel[rowCount][i])
             if i < currentRow.count {
                 let index = currentRow.index(currentRow.startIndex, offsetBy: i)
                 currentLabel.text = String(currentRow[index])
+            
+                
+//                extractedFunc(label: currentLabel)
             }
         }
     }
     
     @objc func textDidChange(_ sender: UIButton) {
         let letter = sender.titleLabel?.text
+        
+       
+        
         if letter == "ввод" && currentRow.count == 5 {
             rowCount += 1
             currentRow = []
