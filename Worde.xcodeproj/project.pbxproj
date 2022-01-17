@@ -8,26 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		56B25063278F864C00E43D10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B25062278F864C00E43D10 /* AppDelegate.swift */; };
-		56B25065278F864C00E43D10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B25064278F864C00E43D10 /* SceneDelegate.swift */; };
 		56B25067278F864C00E43D10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B25066278F864C00E43D10 /* ViewController.swift */; };
-		56B2506A278F864C00E43D10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B25068278F864C00E43D10 /* Main.storyboard */; };
 		56B2506C278F865900E43D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56B2506B278F865900E43D10 /* Assets.xcassets */; };
 		56B2506F278F865900E43D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56B2506D278F865900E43D10 /* LaunchScreen.storyboard */; };
+		56B2507C278F8B2100E43D10 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2507B278F8B2100E43D10 /* UIView+Extension.swift */; };
+		56B250962790780900E43D10 /* WordeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B250952790780900E43D10 /* WordeTests.swift */; };
+		56B250A02791A9C000E43D10 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2509F2791A9BF00E43D10 /* MyClass.swift */; };
+		56B250A4279593B500E43D10 /* CoveredClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B250A3279593B400E43D10 /* CoveredClass.swift */; };
+		56B250A82795940600E43D10 /* CoveredTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B250A72795940600E43D10 /* CoveredTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56B250982790780900E43D10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56B25057278F864B00E43D10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56B2505E278F864C00E43D10;
+			remoteInfo = Worde;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		56B2505F278F864C00E43D10 /* Worde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Worde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56B25062278F864C00E43D10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56B25064278F864C00E43D10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56B25066278F864C00E43D10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56B25069278F864C00E43D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56B2506B278F865900E43D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56B2506E278F865900E43D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56B25070278F865900E43D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B2507B278F8B2100E43D10 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		56B250932790780900E43D10 /* WordeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B250952790780900E43D10 /* WordeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordeTests.swift; sourceTree = "<group>"; };
+		56B250972790780900E43D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56B2509F2791A9BF00E43D10 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		56B250A3279593B400E43D10 /* CoveredClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredClass.swift; sourceTree = "<group>"; };
+		56B250A72795940600E43D10 /* CoveredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoveredTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		56B2505C278F864C00E43D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B250902790780900E43D10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				56B25061278F864C00E43D10 /* Worde */,
+				56B250942790780900E43D10 /* WordeTests */,
 				56B25060278F864C00E43D10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				56B2505F278F864C00E43D10 /* Worde.app */,
+				56B250932790780900E43D10 /* WordeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,14 +84,25 @@
 			isa = PBXGroup;
 			children = (
 				56B25062278F864C00E43D10 /* AppDelegate.swift */,
-				56B25064278F864C00E43D10 /* SceneDelegate.swift */,
 				56B25066278F864C00E43D10 /* ViewController.swift */,
-				56B25068278F864C00E43D10 /* Main.storyboard */,
 				56B2506B278F865900E43D10 /* Assets.xcassets */,
 				56B2506D278F865900E43D10 /* LaunchScreen.storyboard */,
 				56B25070278F865900E43D10 /* Info.plist */,
+				56B2507B278F8B2100E43D10 /* UIView+Extension.swift */,
+				56B2509F2791A9BF00E43D10 /* MyClass.swift */,
+				56B250A3279593B400E43D10 /* CoveredClass.swift */,
 			);
 			path = Worde;
+			sourceTree = "<group>";
+		};
+		56B250942790780900E43D10 /* WordeTests */ = {
+			isa = PBXGroup;
+			children = (
+				56B250952790780900E43D10 /* WordeTests.swift */,
+				56B250972790780900E43D10 /* Info.plist */,
+				56B250A72795940600E43D10 /* CoveredTests.swift */,
+			);
+			path = WordeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +125,24 @@
 			productReference = 56B2505F278F864C00E43D10 /* Worde.app */;
 			productType = "com.apple.product-type.application";
 		};
+		56B250922790780900E43D10 /* WordeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56B2509A2790780A00E43D10 /* Build configuration list for PBXNativeTarget "WordeTests" */;
+			buildPhases = (
+				56B2508F2790780900E43D10 /* Sources */,
+				56B250902790780900E43D10 /* Frameworks */,
+				56B250912790780900E43D10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56B250992790780900E43D10 /* PBXTargetDependency */,
+			);
+			name = WordeTests;
+			productName = WordeTests;
+			productReference = 56B250932790780900E43D10 /* WordeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +154,10 @@
 				TargetAttributes = {
 					56B2505E278F864C00E43D10 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					56B250922790780900E43D10 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 56B2505E278F864C00E43D10;
 					};
 				};
 			};
@@ -115,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				56B2505E278F864C00E43D10 /* Worde */,
+				56B250922790780900E43D10 /* WordeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +187,13 @@
 			files = (
 				56B2506F278F865900E43D10 /* LaunchScreen.storyboard in Resources */,
 				56B2506C278F865900E43D10 /* Assets.xcassets in Resources */,
-				56B2506A278F864C00E43D10 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B250912790780900E43D10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +204,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B250A02791A9C000E43D10 /* MyClass.swift in Sources */,
+				56B2507C278F8B2100E43D10 /* UIView+Extension.swift in Sources */,
 				56B25067278F864C00E43D10 /* ViewController.swift in Sources */,
 				56B25063278F864C00E43D10 /* AppDelegate.swift in Sources */,
-				56B25065278F864C00E43D10 /* SceneDelegate.swift in Sources */,
+				56B250A4279593B500E43D10 /* CoveredClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B2508F2790780900E43D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56B250A82795940600E43D10 /* CoveredTests.swift in Sources */,
+				56B250962790780900E43D10 /* WordeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		56B25068278F864C00E43D10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56B25069278F864C00E43D10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		56B250992790780900E43D10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56B2505E278F864C00E43D10 /* Worde */;
+			targetProxy = 56B250982790780900E43D10 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		56B2506D278F865900E43D10 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -317,6 +395,44 @@
 			};
 			name = Release;
 		};
+		56B2509B2790780A00E43D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yespeace.WordeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Worde.app/Worde";
+			};
+			name = Debug;
+		};
+		56B2509C2790780A00E43D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WordeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yespeace.WordeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Worde.app/Worde";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +450,15 @@
 			buildConfigurations = (
 				56B25074278F865900E43D10 /* Debug */,
 				56B25075278F865900E43D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56B2509A2790780A00E43D10 /* Build configuration list for PBXNativeTarget "WordeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B2509B2790780A00E43D10 /* Debug */,
+				56B2509C2790780A00E43D10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
